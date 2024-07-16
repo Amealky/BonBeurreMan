@@ -1,0 +1,91 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Linux",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/output/linux/BonBeurreMan_linux_Debug",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "LD_LIBRARY_PATH",
+          "value": " /home/amealky/Bureau/SFML-2.6.1"
+        }
+      ],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "Debug Windows",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/output/windows/BonBeurreMan_windows_Debug.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "{YOUR_SFML_LIB_PATH};${env:PATH};"
+        }
+      ],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "windows-build",
+      "miDebuggerPath": "{YOUR_GDB_EXE_PATH}"
+    },
+    {
+      "name": "Debug MacOs",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/output/mac/BonBeurreMan_mac_Debug",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "DYLD_LIBRARY_PATH",
+          "value": "/Users/amealky/Desktop/SFML-2.6.1/lib/"
+        }
+      ],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/amealky/Desktop/BombermanClient-Public",
+      "program": "/Users/amealky/Desktop/BombermanClient-Public/build/Debug/outDebug"
+    }
+  ]
+}
