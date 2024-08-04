@@ -2,7 +2,7 @@
 //  Utils.hpp
 //  BonBeurreMan
 //
-//  Copyright © 2018 Amealky. All rights reserved.
+//  Copyright © 2018 Meta-Ben. All rights reserved.
 //
 
 
