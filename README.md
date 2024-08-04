@@ -26,7 +26,7 @@ This project is an Engine/Network Game prototype made in C++ and [SFML](https://
 
 Its based on the famous Bomberman game except here you play farmer that fight into barns and make butter explode on the face of each other ! You can play on local/remote multiplayer
 
-all maps of the game was made using my [TileMapperLite](https://github.com/Amealky/TileMapperLite) software
+all maps of the game was made using my [TileMapperLite](https://github.com/Meta-Ben/TileMapperLite) software
 
 ## Run it
 The github file already provide the ``.exe`` and a ``binary linux file`` just double click on the file regarding your OS
